@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ditto productos</title>
-    <!--Boostrap CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css"
-        integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <title>Aplicacion de productos</title>
+    <!--CDN BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css">
 </head>
 
 <body>
 
-    <!--Navegación-->
-    <nav class="navbar navbar-light bg-light">
-        <a href="#" class="navbar-brand">
-            Aplicación de Productos
+    <!--Navegacion-->
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">
+            Aplicacion de productos
         </a>
     </nav>
 
@@ -34,22 +32,25 @@
                             <input type="text" id="name" placeholder="Nombre del Producto" class="form-control">
                         </div>
                         <div class="form-group">
-                            <input type="number" step="0.01" id="price" placeholder="Precio" class="form-control">
+                            <input type="number" step="0.01" id="price" placeholder="Precio del producto"
+                                class="form-control">
                         </div>
                         <div class="form-group">
-                            <input type="number" id="year" min="1900" max="2100" value="2021"
-                                placeholder="Año del Producto" class="form-control">
+                            <input type="numer" id="year" placeholder="Año del Producto" class="form-control"
+                                value="2021" min="1950" max="2030">
                         </div>
                         <input type="submit" value="Guardar" class="btn btn-primary btn-block">
                     </form>
                 </div>
             </div>
+            <div id="product-list" class="col-md-8"></div>
+
         </div>
-
-        <div id="product-list" class="col-md-8 mt-4 float-left"></div>
-
     </div>
-    </div>
+
+
+
+
     <script src="app.js"></script>
 </body>
 
